@@ -31,7 +31,8 @@ Packages:
 pip install requests
 pip install bs4
 pip install SQLAlchemy
-pip install psycopg2pip install pylint-flask
+pip install psycopg2
+pip install pylint-flask
 pip install pylint-flask-sqlalchemy
 ```
 ### Ubuntu
