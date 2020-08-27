@@ -3,3 +3,5 @@
 /pyvenv.cfg
 /Lib
 /pip-selfcheck.json
+/params.json
+/__pycache__

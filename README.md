@@ -26,6 +26,14 @@ Setup configuration:
 ```
 cp dist\params.json params.json
 ```
+Packages:
+```
+pip install requests
+pip install bs4
+pip install SQLAlchemy
+pip install psycopg2pip install pylint-flask
+pip install pylint-flask-sqlalchemy
+```
 ### Ubuntu
 Setup virtual enviornment for python and activate it:
 ```
@@ -39,3 +47,12 @@ Activation:
 Setup configuration:
 ```
 cp dist/params.json params.json
+```
+```
+Packages:
+```
+pip install requests
+pip install bs4
+pip install SQLAlchemy
+pip install psycopg2
+```
