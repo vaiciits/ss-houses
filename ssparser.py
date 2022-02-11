@@ -31,16 +31,16 @@ class HouseParser(object):
     def get_data(self, index):
         return clear_b(''.join(map(str, self.tds[index].contents)))
 
-    def get_land(self):
-        land = re.findall(r'([\d\.]+) ', self.get_data(7))
+    def get_land(self, index=7):
+        land = re.findall(r'([\d\.]+) ', self.get_data(index))
         return land[0] if len(land) else None
 
-    def get_price(self):
-        return int(re.search(r'[\d,]+', self.get_data(8)).group() \
+    def get_price(self, index=8):
+        return int(re.search(r'[\d,]+', self.get_data(index)).group() \
             .replace(",", ""))
 
-    def get_unit(self):
-        land = re.findall(r' (.+)', self.get_data(7))
+    def get_unit(self, index=7):
+        land = re.findall(r' (.+)', self.get_data(index))
         return land[0] if len(land) else None
 
     def get_url(self):

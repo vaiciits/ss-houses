@@ -42,7 +42,8 @@ class HousesCrawler(object):
                       rooms=int(parser.get_data(6)),
                       land=parser.get_land(),
                       unit=parser.get_unit(),
-                      price=parser.get_price())
+                      price=parser.get_price(),
+                      created=datetime.now())
         return self.populate_extra(house)
 
     def populate_extra(self, house):
